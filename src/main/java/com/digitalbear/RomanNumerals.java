@@ -10,7 +10,7 @@ public class RomanNumerals {
 
     static Map<Integer,String> roman = new HashMap();
     static int[] ints = {1000, 900,500,400,100,90,50,40,10,9,5,4,1};
-    static String[] numerals = {"M","CM","D","CD","C","XC","L","X"};
+    static String[] numerals = {"M","CM","D","CD","C","XC","L","X","IX","V","IV","I"};
 
     public static String getRomanNumeral(int num) {
         roman.put(1, "I");
@@ -22,6 +22,9 @@ public class RomanNumerals {
                 System.out.println(entry.getKey());     // Print the key with max value
             }
         }*/
+        for(int i = 0; i<ints.length ;i++){
+            System.out.println(i);
+        }
         return (String) roman.get(num);
     }
 }
