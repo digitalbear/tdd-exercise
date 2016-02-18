@@ -9,7 +9,8 @@ import java.util.Map;
 public class RomanNumerals {
 
     static Map<Integer,String> roman = new HashMap();
-    static int[] ints = {1000, 900,500};
+    static int[] ints = {1000, 900,500,400,100,90,50,40,10,9,5,4,1};
+    static String[] numerals = {"M","CM","D","CD","C","XC","L","X"};
 
     public static String getRomanNumeral(int num) {
         roman.put(1, "I");
