@@ -22,8 +22,12 @@ public class RomanNumerals {
                 System.out.println(entry.getKey());     // Print the key with max value
             }
         }*/
+
         for(int i = 0; i<ints.length ;i++){
-            System.out.println(i);
+            if(num >= ints[i]){
+                num=num-ints[i];
+                System.out.println(numerals[i]);
+            }
         }
         return (String) roman.get(num);
     }

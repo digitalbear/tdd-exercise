@@ -17,4 +17,8 @@ public class RomanNumeralsTest {
         assertEquals("IV", RomanNumerals.getRomanNumeral(4));
         //assertEquals("V", RomanNumerals.getRomanNumeral(6));
     }
+    @Test
+    public void checkNumbers1() {
+        assertEquals("IV", RomanNumerals.getRomanNumeral(1000));
+    }
 }
