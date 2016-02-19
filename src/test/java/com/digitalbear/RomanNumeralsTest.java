@@ -7,18 +7,24 @@ import static org.junit.Assert.assertEquals;
 public class RomanNumeralsTest {
 
     @Test
-    public void number_1_is_I() {
+    public void check_number_1() {
         assertEquals("I", RomanNumerals.getRomanNumeral(1));
-        assertEquals("V", RomanNumerals.getRomanNumeral(5));
     }
 
     @Test
-    public void checkNumbers() {
+    public void check_number_4() {
         assertEquals("IV", RomanNumerals.getRomanNumeral(4));
-        //assertEquals("V", RomanNumerals.getRomanNumeral(6));
     }
     @Test
-    public void checkNumbers1() {
+    public void check_number_1000() {
         assertEquals("M", RomanNumerals.getRomanNumeral(1000));
+    }
+    @Test
+    public void check_number_2() {
+        assertEquals("II", RomanNumerals.getRomanNumeral(2));
+    }
+    @Test
+    public void check_number_36() {
+        assertEquals("XXXVI", RomanNumerals.getRomanNumeral(36));
     }
 }
